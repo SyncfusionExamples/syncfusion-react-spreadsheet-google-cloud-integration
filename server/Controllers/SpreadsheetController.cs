@@ -16,7 +16,7 @@ namespace WebAPI.Controllers
     public class SpreadsheetController : ControllerBase
     {
         // Read Google Cloud Storage settings from configuration
-        public readonly string _bucketName;
+        private readonly string _bucketName;
         private readonly StorageClient _storageClient;
 
         // Constructor for SpreadsheetController

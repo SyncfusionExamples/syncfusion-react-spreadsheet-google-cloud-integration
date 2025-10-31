@@ -23,7 +23,7 @@ function Default() {
   // Function to open a spreadsheet file from Google Cloud Storage via an API call 
   const openFromGoogleCloud = () => {
     spreadsheet.showSpinner();
-    // Make a POST request to the backend API to open the file to Google Cloud Storage 
+    // Make a POST request to the backend API to open the file to Google Cloud Storage.Replace the URL with your local or hosted endpoint URL.
     fetch('https://localhost:portNumber/api/spreadsheet/OpenFromGoogleCloud', {
       method: 'POST',
       headers: {
@@ -57,7 +57,7 @@ function Default() {
         'PdfLayoutSettings',
         JSON.stringify({ FitSheetOnOnePage: false }) // PDF layout settings 
       );
-      // Make a POST request to the backend API to save the file to Google Cloud Storage 
+      // Make a POST request to the backend API to save the file to Google Cloud Storage.Replace the URL with your local or hosted endpoint URL.
       fetch('https://localhost:portNumber/api/spreadsheet/SaveToGoogleCloud', {
         method: 'POST',
         body: formData,
