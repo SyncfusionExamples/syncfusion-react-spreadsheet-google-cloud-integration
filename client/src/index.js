@@ -66,7 +66,7 @@ function Default() {
           if (!response.ok) {
             throw new Error(`Save request failed with status ${response.status}`);
           }
-          window.alert('Workbook saved successfully to Azure Blob Storage.');
+          window.alert('Workbook saved successfully to Google Cloud Storage.');
         })
         .catch((error) => {
           window.alert('Error saving to server:', error);

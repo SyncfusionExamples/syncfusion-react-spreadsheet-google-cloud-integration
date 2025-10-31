@@ -16,9 +16,9 @@ namespace WebAPI.Controllers
     public class SpreadsheetController : ControllerBase
     {
         // Read Google Cloud Storage settings from configuration
-        private IConfiguration _configuration;
         public readonly string _bucketName;
         private readonly StorageClient _storageClient;
+
         // Constructor for SpreadsheetController
         public SpreadsheetController(IConfiguration configuration)
         {
@@ -30,13 +30,12 @@ namespace WebAPI.Controllers
             _storageClient = StorageClient.Create(credentials);
 
             // Fetch values from appsettings.json
-            _configuration = configuration;
-            _bucketName = _configuration.GetValue<string>("BucketName");
+            _bucketName = configuration.GetValue<string>("BucketName");
         }
 
         [HttpPost]
         [Route("OpenFromGoogleCloud")]
-        public async Task<IActionResult> OpenFromGoogleCloud([FromBody] FileOptions options)
+        public IActionResult OpenFromGoogleCloud([FromBody] FileOptions options)
         {
             try
             {

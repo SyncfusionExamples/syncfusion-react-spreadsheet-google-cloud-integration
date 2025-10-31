@@ -73,6 +73,9 @@ A comprehensive sample demonstrating how to integrate the Syncfusion React Sprea
       { name: 'Price Details', extension: '.csv' },
    ];
    ```
+   
+- **Tested files used in the dropdown can be found here**: [Tested Excel files](./client/public/Files/) 
+
 - You can update this list to match the actual Excel files stored in your Google Cloud storage container.
 - After selecting a file, click the "Open From GoogleCloud" button to load the selected Excel file into the Syncfusion Spreadsheet.
 - Once you make edits, click the "Save to GoogleCloud" button to save the changes back to the same file in your Google Cloud container.
