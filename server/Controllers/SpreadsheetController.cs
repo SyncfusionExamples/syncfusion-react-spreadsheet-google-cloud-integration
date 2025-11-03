@@ -86,7 +86,7 @@ namespace WebAPI.Controllers
                 Stream fileStream = Workbook.Save<Stream>(saveSettings);
                 fileStream.Position = 0; // Reset stream position
 
-                // Define filename to save into the Google Cloud Storage 
+                // Define filename to save into the Google Cloud Storage
                 string fileName = saveSettings.FileName + "." + saveSettings.SaveType.ToString().ToLower();
 
                 // Upload Excel stream to Google Cloud Storage
