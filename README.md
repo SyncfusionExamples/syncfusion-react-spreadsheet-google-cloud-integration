@@ -1,24 +1,24 @@
 # Syncfusion React Spreadsheet + Google Cloud Integration
 
-A comprehensive sample demonstrating how to integrate the Syncfusion React Spreadsheet component with Google Cloud Storage using an ASP.NET Core Web API backend. This solution includes client-side file selection, secure cloud-based open/save operations, and efficient Excel file handling for modern web applications.
+A comprehensive sample demonstrating how to integrate the [React Spreadsheet](https://www.syncfusion.com/spreadsheet-editor-sdk/react-spreadsheet-editor) component with Google Cloud Storage using an ASP.NET Core Web API backend. This solution includes client-side file selection, secure cloud-based open/save operations, and efficient Excel file handling for modern web applications.
 
 📁 **Project Structure**
 
 ```
-├── client/       # React app with Syncfusion Spreadsheet
+├── client/       # React app with Spreadsheet
 └── server/       # ASP.NET Core Web API project
 ```
 
 ✨ **Features**
 
-- Open Excel files directly from Google Cloud into Syncfusion Spreadsheet.
+- Open Excel files directly from Google Cloud into Spreadsheet.
 - Edit spreadsheet data in-browser.
 - Save changes back to Google Cloud with a single click.
 - Dropdown list to select files from Google Cloud.
 
 🧩 **Technologies Used**
 
-- React + Syncfusion Spreadsheet
+- React + Spreadsheet
 - ASP.NET Core Web API
 - Google Cloud Storage for .NET
 - Google Cloud for cloud storage
@@ -77,7 +77,7 @@ A comprehensive sample demonstrating how to integrate the Syncfusion React Sprea
 - **Tested files used in the dropdown can be found here**: [Tested Excel files](./client/public/Files/) 
 
 - You can update this list to match the actual Excel files stored in your Google Cloud storage container.
-- After selecting a file, click the "Open From GoogleCloud" button to load the selected Excel file into the Syncfusion Spreadsheet.
+- After selecting a file, click the "Open From GoogleCloud" button to load the selected Excel file into the Spreadsheet.
 - Once you make edits, click the "Save to GoogleCloud" button to save the changes back to the same file in your Google Cloud container.
 
 📄 **License and copyright**
